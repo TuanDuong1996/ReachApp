@@ -1,0 +1,14 @@
+{
+  "pluginId": "my-incidents",
+  "extensions": [
+    {
+      "area": "Page",
+      "componentName": "App",
+      "route": "incidents"
+    }
+  ],
+  "settings": {
+    "greetingLabel": "Heya!",
+    "fontColor": "yellow"
+  }
+}

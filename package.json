@@ -1,0 +1,37 @@
+{
+  "name": "incidents",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "dev": "npm run css && reach-plugin-scripts dev",
+    "build": "npm run css && reach-plugin-scripts build",
+    "publish": "npm run css && reach-plugin-scripts publish",
+    "publish-web": "npm run css && reach-plugin-scripts publishWeb",
+    "css": "npx tailwindcss -o src/styles/index.css && lessc src/styles/common.less src/styles/common.css",
+    "css:prod": "NODE_ENV=production npx tailwindcss -o src/styles/index.css --minify && lessc src/styles/common.less src/styles/common.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@livetiles/reach-components-react": "0.2.213",
+    "@livetiles/reach-plugin-scripts": "0.2.4",
+    "@livetiles/reach-plugin-types": "0.2.29",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.6",
+    "@types/styled-components": "5.1.0",
+    "axios": "^0.21.1",
+    "babel-preset-react-app": "10.0.0",
+    "moment": "^2.29.1",
+    "qs": "^6.10.1",
+    "react-hook-form": "^7.12.2",
+    "react-query": "^3.19.1",
+    "react-router-dom": "^5.1.2",
+    "typescript": "4.3.5"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.7",
+    "@types/react-router-dom": "^5.1.8",
+    "less": "^4.1.1",
+    "tailwindcss": "^2.2.7"
+  }
+}
